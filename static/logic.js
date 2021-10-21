@@ -6,6 +6,8 @@ $(document).ready(function(){
     $('#myInput').trigger('focus')
   })
 
+  
+
 // SANKEY
 // Themes begin
 am4core.useTheme(am4themes_animated);
