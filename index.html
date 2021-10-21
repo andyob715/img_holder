@@ -10,94 +10,156 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- My CSS -->
+    <link rel="stylesheet" href="static/style.css">
+
     <!--Some dumb scripts I finally realized i had to add to get the dropdown to work-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- AM Charts Scripts -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  
   </head>
 <body>
 
-  <div class="jumbotron jumbotron-fluid">
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Tealium Analytics</h1>
     <p class="lead">This is a barely functioning test mock-up of what an Analytics solution may look like.</p>
   </div>
 </div>
- <!-- Creates the Overall Grid -->
+
+<!-- Creates the Overall Grid -->
  <div class="container">
  
   <!-- Row 1: Spotlight Campaigns -->
 <div class="row">
    <div class="col-md-12">
       <h1>Spotlight Campaigns <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px" data-toggle="tooltip" data-placement="top" title="Open Campaign Page"><small class="text-muted"> Powered by Premium Analytics</small></h1>
-<div class="card-deck">
-    <div class="card">
-      <div class="card-body">
-      <img class="card-img-top" src="https://datavizproject.com/wp-content/uploads/2015/10/3-Donut-Chart.png" alt="Card image cap">
-        <h5 class="card-title">Black Friday Campaign</h5>
-        <p class="card-text">
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <img class="card-img-top" src="https://datavizproject.com/wp-content/uploads/2015/10/3-Donut-Chart.png" alt="Card image cap">
+            <h5 class="card-title">Black Friday Campaign</h5>
+             <p class="card-text">
         Activate omnichannel campaign to expose Black Friday deals to MVP customers
-        <li>Key KPI: 90% Connector Activation for Audiences Included</li>
-        <li>Audiences: <em>MVP, Recent Purchases, Active Customers</em></li>
-        <li>Active From:July 2021 - November 2021</li></p>
-        <a href="#" class="btn btn-dark">Campaign Details</a>
+          <li>Key KPI: 90% Connector Activation for Audiences Included</li>
+          <li>Audiences: <em>MVP, Recent Purchases, Active Customers</em></li>
+          <li>Active From:July 2021 - November 2021</li></p>
+          <a href="#" class="btn btn-dark">Campaign Details</a>
+        </div>
       </div>
-    </div>
     <div class="card">
       <div class="card-body">
-      <img class="card-img-top" src="https://datavizproject.com/wp-content/uploads/2015/10/14-Progress-Bar.png" alt="Card image cap">
-        <h5 class="card-title">Product Launch - Suede Crocs</h5>
-        <p class="card-text">
+        <img class="card-img-top" src="https://datavizproject.com/wp-content/uploads/2015/10/14-Progress-Bar.png" alt="Card image cap">
+          <h5 class="card-title">Product Launch - Suede Crocs</h5>
+          <p class="card-text">
         Promote and convert customers who love Crocs to purchase new Suede Offering
-        <li>Key KPI: 10% Cart Success on Product</li>
-        <li>Audiences: <em>MVP, Recent Purchases-Crocs, Crocs-Lovers</em></li>
-        <li>Active From:July 2021 - November 2021</li></p>
+          <li>Key KPI: 10% Cart Success on Product</li>
+          <li>Audiences: <em>MVP, Recent Purchases-Crocs, Crocs-Lovers</em></li>
+          <li>Active From:July 2021 - November 2021</li></p>
         <a href="#" class="btn btn-dark">Campaign Details</a>
       </div>
     </div>
   </div>
 </div>
 </div>
-   
-   
-<!-- Row 2 Data Insights -->
-<hr class="my-4">
+
+  <!-- Row 1: Journey Analytics -->
+</br>
+<div class="row">
+  <div class="col-md-12">
+      <h1>Journey Analytics <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px" data-toggle="tooltip" data-placement="top" title="Open Campaign Page"><small class="text-muted"> Powered by Premium Analytics</small></h1>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5>Profiles Initiated</h5>
+        <p>25/50 (50%)</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5>Actions Triggered</h5>
+          <p>2</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5>User Follow Up</h5>
+          <p>23/25 (92%)</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5>User Final Actions</h5>
+          <p>Desired: 9/23 (40%)</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+      </br> 
+         <div id="chartdiv-sankey" style="height: 450px;width: auto;"></div>
+      </div>
+
+        <!-- Row 2 Data Insights (First 3) -->
+        <div class="col-md-12">
+        </br>
+        </div>
+        <hr class="my-4">
 <div class="row">
    <div class="col-md-12">
       <h1>Insights <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px"><small class="text-muted"> Powered by Predict</small></h1>
-   <div class="row">
-   <div class="card-deck">
-        <div class="card">
-          <h5 class="card-header bg-info text-white">Unused Audience <span class="badge badge-dark">New</span></h5>
+      <div class="row">
+        <div class="card-deck">
+            <!-- Insight #1 -->
+          <div class="card">
+            <h5 class="card-header bg-info text-white">Unused Audience <span class="badge badge-dark">New</span></h5>
              <div class="card-body">
                 <h5 class="card-title">Audience: MVP-cart-abandoners</h5>
                     <p class="card-text">Audience created within the last 30 days with no connectors driving campaigns</p>
                     <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Take Action</a>
              </div>
             </div>
-    <div class="card">
-  <h5 class="card-header bg-info text-white">Stale Audience</h5>
-  <div class="card-body">
-    <h5 class="card-title">Fall-2020 MVPs</h5>
-    <p class="card-text">Audience has had no modifications and no active connections in 90 days.</p>
-    <a href="#" class="btn btn-dark">Take Action</a>
-  </div>
-</div>
-
-    <div class="card">
-  <h5 class="card-header bg-info text-white">Underutilized Audience</h5>
-  <div class="card-body">
-    <h5 class="card-title">Repeat Coupon Shoppers</h5>
-    <p class="card-text">Audience created in last 90 days has less than 25% connector activation.</p>
-    <a href="#" class="btn btn-dark">Take Action</a>
-  </div>
-     </div>
+            <!-- Insight #2 -->
+          <div class="card">
+            <h5 class="card-header bg-info text-white">Stale Audience</h5>
+            <div class="card-body">
+                <h5 class="card-title">Fall-2020 MVPs</h5>
+                <p class="card-text">Audience has had no modifications and no active connections in 90 days.</p>
+                <a href="#" class="btn btn-dark">Take Action</a>
+            </div>
+          </div>
+             <!-- Insight #3 -->
+          <div class="card">
+             <h5 class="card-header bg-info text-white">Underutilized Audience</h5>
+              <div class="card-body">
+                <h5 class="card-title">Repeat Coupon Shoppers</h5>
+                <p class="card-text">Audience created in last 90 days has less than 25% connector activation.</p>
+                <a href="#" class="btn btn-dark">Take Action</a>
+              </div>
+          </div>
      </div>
      </br>
+<!-- Row 2 Data Insights (Second 3) -->
    <div class="col-md-12">
      </br>
    <div class="row">
    <div class="card-deck">
+     <!-- Insight #4 -->
         <div class="card">
           <h5 class="card-header bg-info text-white">Missing Activation</h5>
              <div class="card-body">
@@ -105,26 +167,26 @@
                     <p class="card-text">Audience type typically activates with MailChimp connector based on type</p>
                     <a href="#" class="btn btn-dark">Take Action</a>
              </div>
-            </div>
+        </div>
+     <!-- Insight #5 -->
+        <div class="card">
+          <h5 class="card-header bg-info text-white">Audience Oversaturation</h5>
+            <div class="card-body">
+              <h5 class="card-title">Audience: MVPs</h5>
+              <p class="card-text">Audience is activated in activated by multiple connectors in successive days.</p>
+              <a href="#" class="btn btn-dark">Take Action</a>
+          </div>
+        </div>
+     <!-- Insight #6 -->
     <div class="card">
-  <h5 class="card-header bg-info text-white">Audience Oversaturation</h5>
-  <div class="card-body">
-    <h5 class="card-title">Audience: MVPs</h5>
-    <p class="card-text">Audience is activated in activated by multiple connectors in successive days.</p>
-    <a href="#" class="btn btn-dark">Take Action</a>
+      <h5 class="card-header bg-info text-white">Data Quality <span class="badge badge-warning">Data</span></h5>
+      <div class="card-body">
+        <h5 class="card-title">Audience: Crocs Haters</h5>
+        <p class="card-text">Audience has Attribute with outdated Enrichment Rules </p>
+        <a href="#" class="btn btn-dark">Take Action</a>
+      </div>
+    </div>
   </div>
-</div>
-
-    <div class="card">
-  <h5 class="card-header bg-info text-white">Data Quality <span class="badge badge-warning">Data</span></h5>
-  <div class="card-body">
-    <h5 class="card-title">Audience: Crocs Haters</h5>
-    <p class="card-text">Audience has Attribute with outdated Enrichment Rules </p>
-    <a href="#" class="btn btn-dark">Take Action</a>
-</p>
-</div>
-     </div>
-     </div>
 <hr class="my-4">
 
 <div class="row">
