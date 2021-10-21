@@ -30,7 +30,7 @@ chart.data = [
   { from: "Coupon Sent", to: "Item Added to Web Cart", value: 7 },
   { from: "Targeted Ad", to: "Item Added to Web Cart", value: 6 },    
   { from: "Item Viewed", to: "No Action Taken", value: 5 },
-  { from: "Item Added to Web Cart", to: "Purchase", value: 1 },
+  { from: "Item Added to Web Cart", to: "Inactive(>30d)", value: 1 },
   { from: "Item Added to Web Cart", to: "Purchase", value: 9 }, 
   { from: "Item Viewed", to: "Inactive(>30d)", value: 5 },  
 ];
