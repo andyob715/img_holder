@@ -111,7 +111,7 @@
               <!-- </div> -->
             <p>
               <div class="col text-right">
-              <a class="btn btn-outline-info btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <a class="btn btn-outline-info btn-sm" id="table-button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="confirm()">
                 Show Table
               </a>
             </p>
@@ -326,11 +326,9 @@
     <h1>State of the Data <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px"></h1>
   </div>
       <div class="col-md-3 text-right">
-        <p>
-          <a class="btn btn-outline-info btn-sm" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-            Filter Data
+          <a class="btn btn-outline-info btn-sm" data-toggle="collapse" id="filter-button" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" onclick="confirm_f()">
+            Show Filters
           </a>
-        </p>
         </div>
         <div class="collapse" id="collapseExample2">
           <div class='btn-group'>
@@ -444,7 +442,7 @@
       <p class="card-text">Audiences without connectors activated per month</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <small class="text-muted">Last updated 30 mins ago</small>
     </div>
   </div>
 </div>
@@ -489,7 +487,7 @@
       <p class="card-text">Visitos in last 90 days by IOS, Android, Other</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <small class="text-muted">Last updated 30 mins ago</small>
     </div>
   </div>
 </div>
@@ -511,9 +509,9 @@
     <div class="row">
         <div class="col text-right">
             <a class="btn btn-sm btn-info mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-            <p><<</p></a>
+              &#9665</a>
             <a class="btn btn-sm btn-info mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-              <p>>></p></a>
+              &#9655</a>
         </div>
         <div class="col-12">
             <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">

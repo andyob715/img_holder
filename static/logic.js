@@ -111,3 +111,27 @@ d3.csv('Resources/tabledata.csv',function (data) {
 	var columns = ["Flow","Intake","Target Action","Customer Response","Customer Action","Customer Terminating Action"]
   tabulate(data,columns)
 })
+
+// Update table button based on user click
+function confirm() {
+  var change = document.getElementById("table-button");
+  if (change.innerHTML == "Hide Table")
+  {
+      change.innerHTML = "Show Table";
+  }
+  else {
+      change.innerHTML = "Hide Table";
+  }
+}
+
+// Update table button based on user click
+function confirm_f() {
+  var change2 = document.getElementById("filter-button");
+  if (change2.innerHTML == "Hide Filters")
+  {
+      change2.innerHTML = "Show Filters";
+  }
+  else {
+      change2.innerHTML = "Hide Filters";
+  }
+}
