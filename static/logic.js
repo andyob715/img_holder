@@ -49,7 +49,7 @@ chart.data = [
 { from: "VIP Sent", to: "Mobile App Visit" , value:43},
 { from: "VIP Sent", to: "Ghosted" , value:24},
 { from: "Website Visit", to: "Item to Cart" , value: 50},
-{ from: "Mobile App Visit", to: "Item to Cart" , value: 75},
+{ from: "Mobile App Visit", to: "Item to Cart" , value: 175},
 { from: "Item to Cart", to: "Cart Purchase" , value: 60},
 { from: "Item to Cart", to: "Cart Abandon" , value: 65},
 { from: "Website Visit", to: "Ghosted" , value: 100},
