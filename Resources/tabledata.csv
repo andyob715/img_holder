@@ -1,0 +1,14 @@
+﻿Flow,Intake,Target Action,Customer Response,Customer Action,Customer Terminating Action
+Optimal,Web Checkout,Discount Coupon Emailed: 100,Website Visit: 52,Item to Cart: 17,Cart Purchase: 10
+Optimal,In-Store Checkout,Facebook Ad: 30,Mobile App Visit: 114,Item to Cart: 31,Cart Purchase: 20
+Neutral,In-Store Checkout,Discount Coupon Emailed: 20,Mobile App Visit: 114,Item to Cart: 25,Cart Abandon: 15
+Neutral,Web Checkout,VIP Sent: 25,Website Visit: 42,Item to Cart: 25,Cart Abandon: 20
+Suboptimal,Web Checkout,Mobile Ad Sent: 100,Website Visit: 52,Item to Cart: 15,Ghosted: 30
+Suboptimal,App Checkout,VIP Sent: 35,Mobile App Visit: 53,Item to Cart: 25,Ghosted: 30
+Poor,App Checkout,Mobile Ad Sent: 140,Mobile App Visit: 95,None,Ghosted: 55
+Poor,Web Checkout,Reward Email Sent: 75,Mobile App Visit: 99,None,Ghosted: 40
+Poor,In-Store Checkout,Reward Email Sent: 10,Website Visit: 52,None,Ghosted: 30
+Poor,App Checkout,Facebook Ad: 125,Website Visit: 62,None,Ghosted: 35
+Poor,In-Store Checkout,VIP Sent: 5,None,None,Ghosted: 16
+Poor,App Checkout,Discount Coupon Emailed: 200,None,None,Ghosted: 39
+Poor,In-Store Checkout,Mobile Ad Sent: 35,None,None,Ghosted: 39

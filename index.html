@@ -5,8 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -22,7 +21,11 @@
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-  
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+
   </head>
 <body>
 
@@ -74,36 +77,26 @@
   <!-- Row 1: Journey Analytics -->
 </br>
 <div class="row">
-  <div class="col-md-12">
+  <div class="col">
       <h1>Journey Analytics <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px" data-toggle="tooltip" data-placement="top" title="Open Campaign Page"><small class="text-muted"> Powered by Premium Analytics</small></h1>
   <div class="row">
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
+    <div class="col border border-secondary">
           <h6>Profiles Initiated</h6>
-        <p>25/50 (50%)</p>
-        </div>
-      </div>
+        <p>900/3,500 (26%)</p>
     </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
+    <div class="col border border-secondary">
           <h6>Actions Triggered</h6>
-          <p>2</p>
-        </div>
-      </div>
+          <p>5</p>
     </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <h6>User Follow Up</h6>
+    <div class="col border border-secondary">
+          <h6>Customer Response</h6>
           <p>23/25 (92%)</p>
         </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
+      <div class="col border border-secondary">
+          <h6>Customer Action</h6>
+          <p>23/25 (92%)</p>
+        </div>
+      <div class="col border border-secondary">
           <h6>User Final Actions</h6>
           <p>Desired: 9/23 (40%)</p>
         </div>
@@ -113,8 +106,19 @@
       <div class="col-md-12">
       </br> 
          <div id="chartdiv-sankey" style="height: 450px;width: auto;"></div>
-      </div>
-
+         <div class="row">
+          <div class="col-md-12">
+              <!-- </div> -->
+            <p>
+              <a class="btn btn-outline-info btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Show Table
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div id="table-sankey"></div>  
+            </div>
+          </div>
+        </div>
         <!-- Row 2 Data Insights (First 3) -->
         <div class="col-md-12">
         </br>
@@ -374,7 +378,6 @@
     </div>
   </div>
 </div>
-
 </body>
 <script src="static/logic.js"></script>
 
