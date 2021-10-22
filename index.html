@@ -322,19 +322,51 @@
 <hr class="my-4">
 
 <div class="row">
+  <div class="col-md-9">
     <h1>State of the Data <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px"></h1>
-    <hr class="my-4">
-    <div class="dropdown">
-  <button class="btn btn-outline-info btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Filter
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item">Rolling 12mth</a>
-    <a class="dropdown-item">Year-to-Date</a>
-    <a class="dropdown-item">Quarter-to-Date</a>
-    <a class="dropdown-item">Custom Range</a>
   </div>
-</div>
+      <div class="col-md-3 text-right">
+        <p>
+          <a class="btn btn-outline-info btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Filter Data
+          </a>
+        </p>
+        </div>
+        <div class="collapse" id="collapseExample">
+          <div class='btn-group'>
+            <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Date
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item">Rolling 12mth</a>
+              <a class="dropdown-item">Year-to-Date</a>
+              <a class="dropdown-item">Quarter-to-Date</a>
+              <a class="dropdown-item">Custom Range</a>
+            </div>
+          </div>
+          <div class='btn-group'>
+            <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Region
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item">US</a>
+              <a class="dropdown-item">EMEA</a>
+              <a class="dropdown-item">APAC</a>
+              <a class="dropdown-item">LATAM</a>
+            </div>
+          </div>
+          <div class='btn-group'>
+            <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Source
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item">Tealium IQ</a>
+              <a class="dropdown-item">Audience Stream</a>
+              <a class="dropdown-item">External Source</a>
+            </div>
+          </div>
+        </div>
+      </br>
       <div class="card-group">
       <div class="card">
   <img class="card-img-top" src="Resources/Events Created.png" alt="Card image cap">
