@@ -22,6 +22,16 @@ body {
     text-align: center;
   }
 
-  p{
+  .p-cent{
     text-align: center;
+  }
+
+  #suedecrocs {
+    height: 400px;
+    width: auto;
+  }
+
+  #suedecrocsfunnel {
+    height: 400px;
+    width: auto;
   }
