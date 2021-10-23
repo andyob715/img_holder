@@ -40,16 +40,21 @@
 
 <!-- Creates the Overall Grid -->
  <div class="container">
- 
+  <div class="col text-right">
+    <a class="btn btn-outline-info btn-sm" data-toggle="collapse" id="premium-button" href="#collapsePremium" role="button" aria-expanded="false" aria-controls="collapsePremium" onclick="confirm_premium()">
+      Show Premium
+    </a>
+  </div> <!--Closes div for Premuim Button-->
   <!-- Row 1: Spotlight Campaigns -->
+  <div class="collapse" id="collapsePremium">
   <div class="row">
     <div class="col-md-12">
-      <h1>Spotlight Campaigns <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px" data-toggle="tooltip" data-placement="top" title="Open Campaign Page"><small class="text-muted"> <abbr title="'Powered By' Signifies a Paid Add-on">Powered by</abbr> Premium Analytics</small></h1>
+      <h1>Spotlight Campaigns <small class="text-muted"> <abbr title="'Powered By' Signifies a Paid Add-on">Powered by</abbr> Premium Analytics</small></h1>
       <div class="card-deck">
         <div class="card">
           <div class="card-body">
             <div id="suedecrocs"></div>
-              <h5 class="card-title">Black Friday Campaign</h5>
+              <h5 class="card-title text-center">Black Friday Campaign</h5>
               <p class="card-text">Activate omnichannel campaign to expose Black Friday deals to MVP customers
                   <li>Key KPI: 90% Connector Activation for Audiences Included</li>
                   <li>Audiences: <em>App-Fanatics, MVPs, Recent Purchasers, Active Customers</em></li>
@@ -60,7 +65,7 @@
       <div class="card"> <!--Card #2-->
         <div class="card-body">
           <div id="suedecrocsfunnel"></div>
-            <h5 class="card-title">Product Launch - Suede Crocs</h5>
+            <h5 class="card-title text-center">Product Launch - Suede Crocs</h5>
             <p class="card-text">Promote and convert customers who love Crocs to purchase new Suede Offering
                 <li>Key KPI: 10% Cart Success on Product</li>
                 <li>Audiences: <em>MVP, Recent Purchases-Crocs, Crocs-Lovers</em></li>
@@ -71,263 +76,265 @@
     </div> <!--closes Card Deck-->
   </div> <!--closes the column-->
 </div> <!--closes the row -->
+  </div> <!--closes the collapse premium-->
 
-<!-- Row 1: Journey Analytics -->
+  <!-- Row 1: Journey Analytics -->
 </br>
-<div class="row">
-  <div class="col">
-      <h1>Journey Analytics <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px" data-toggle="tooltip" data-placement="top" title="Open Campaign Page"><small class="text-muted"> Powered by Premium Analytics</small></h1>
+<div class="collapse" id="collapsePremium">
   <div class="row">
-    <div class="col border border-light">
+    <div class="col">
+      <h1>Journey Analytics <small class="text-muted"> Powered by Premium Analytics</small></h1>
+    <div class="row">
+      <div class="col border border-light">
           <h6>Profiles Initiated</h6>
         <p class="p-cent">900/3,500 (26%)</p>
-    </div>
-    <div class="col border border-light">
+      </div> <!--closes initiated-->
+      <div class="col border border-light">
           <h6>Actions Triggered</h6>
           <p class="p-cent">5</p>
-    </div>
-    <div class="col border border-light">
+      </div><!--closes triggered-->
+      <div class="col border border-light">
           <h6>Customer Response</h6>
           <p class="p-cent">735/900 (82%)</p>
-        </div>
+      </div><!--closes response-->
       <div class="col border border-light">
           <h6>Customer Action</h6>
           <p class="p-cent">225/735 (31%)</p>
-        </div>
+      </div><!--closes action-->
       <div class="col border border-light">
           <h6>User Final Actions</h6>
           <p class="p-cent">Optimal: 60/225 (27%)</p>
-        </div>
-      </div>
-    </div>
+      </div> <!--closes final destination-->
+    </div><!--closes row-->
+  </div> <!--closes col-->
+  </div>
     <div class="row">
       <div class="col-md-12">
       </br> 
-         <div id="chartdiv-sankey" style="height: 450px;width: auto;"></div>
+         <div id="chartdiv-sankey" style="height: 450px;width: auto;"></div> <!--same row close-->
          <div class="row">
           <div class="col-md-12">
-              <!-- </div> -->
-            <p>
               <div class="col text-right">
               <a class="btn btn-outline-info btn-sm" id="table-button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="confirm()">
                 Show Table
               </a>
-            </p>
-            </div>
+              </div> <!--closes show table button-->
+          </div> <!--closes the column-->
             <div class="collapse" id="collapseExample">
-              <div id="table-sankey"></div>  
+            </br>
+            <div class="row">
+              <div class = "col-md-12" id="table-sankey"></div>  
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
         <!-- Row 2 Data Insights (First 3) -->
-        <div class="col-md-12">
-        </br>
-        </div>
-        <hr class="my-4">
-<div class="row">
-   <div class="col-md-12">
-      <h1>Insights <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px"><small class="text-muted"> Powered by Predict</small></h1>
-      <div class="row">
-        <div class="card-deck">
+<div class="collapse" id="collapsePremium">
+</br>
+  <hr class="my-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Insights <small class="text-muted"> Powered by Predict</small></h1>
+          <div class="row">
+            <div class="card-deck">
             <!-- Insight #1 -->
-          <div class="card">
-            <h5 class="card-header bg-info text-white">Unused Audience <span class="badge badge-dark">New</span></h5>
-             <div class="card-body">
-                <h5 class="card-title">Audience: MVP-cart-abandoners</h5>
-                    <p class="card-text">Audience created within the last 30 days with no connectors driving campaigns</p>
-                    <!-- Card Buttons -->
-                    <div class="col text-right">
-                      <div class='btn-group'>
-                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Update Enhrichments</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Update Audience</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Update Connectors</a>
-                          </div>
-                      </div>
-                        <div class='btn-group'>
-                          <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Mute for a Week</a>
-                              <a class="dropdown-item" href="#">Mute for a Month</a>
-                              <a class="dropdown-item" href="#">Mute forever</a>
-                            </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-            <!-- Insight #2 -->
-          <div class="card">
-            <h5 class="card-header bg-info text-white">Stale Audience</h5>
-            <div class="card-body">
-                <h5 class="card-title">Fall-2020 MVPs</h5>
-                <p class="card-text">Audience has had no modifications and no active connections in 90 days.</p>
-                    <!-- Card Buttons -->
-                    <div class="col text-right">
-                      <div class='btn-group'>
-                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Update Enhrichments</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Update Audience</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Update Connectors</a>
-                          </div>
-                      </div>
-                        <div class='btn-group'>
-                          <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Mute for a Week</a>
-                              <a class="dropdown-item" href="#">Mute for a Month</a>
-                              <a class="dropdown-item" href="#">Mute forever</a>
-                            </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-
+              <div class="card">
+                <h5 class="card-header bg-info text-white">Unused Audience <span class="badge badge-dark">New</span></h5>
+                 <div class="card-body">
+                    <h5 class="card-title">Audience: MVP-cart-abandoners</h5>
+                      <p class="card-text">Audience created within the last 30 days with no connectors driving campaigns</p>
+                      <!-- Card Buttons -->
+                        <div class="col text-right">
+                          <div class='btn-group'>
+                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Update Enhrichments</a>
+                                  <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Update Audience</a>
+                                  <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Update Connectors</a>
+                              </div> <!--closes dropdown menu-->
+                          </div> <!--closes button group-->
+                          <div class='btn-group'>
+                            <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Mute for a Week</a>
+                                <a class="dropdown-item" href="#">Mute for a Month</a>
+                                <a class="dropdown-item" href="#">Mute forever</a>
+                              </div><!--closes second dropdown menu-->
+                          </div><!--closes second button group-->
+                        </div> <!--closes both button groups-->
+                  </div> <!--closes card body-->
+              </div><!--closes the card-->
+           
+          <!-- Insight #2 -->
+              <div class="card">
+                <h5 class="card-header bg-info text-white">Stale Audience</h5>
+                  <div class="card-body">
+                    <h5 class="card-title">Fall-2020 MVPs</h5>
+                    <p class="card-text">Audience has had no modifications and no active connections in 90 days.</p>
+                        <!-- Card Buttons -->
+                        <div class="col text-right">
+                          <div class='btn-group'>
+                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Update Enhrichments</a>
+                                  <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Update Audience</a>
+                                  <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Update Connectors</a>
+                              </div> <!--closes dropdown menu-->
+                          </div> <!--closes button group-->
+                          <div class='btn-group'>
+                            <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Mute for a Week</a>
+                                <a class="dropdown-item" href="#">Mute for a Month</a>
+                                <a class="dropdown-item" href="#">Mute forever</a>
+                              </div><!--closes second dropdown menu-->
+                          </div><!--closes second button group-->
+                        </div> <!--closes both button groups-->
+                  </div> <!--closes card body-->
+              </div><!--closes the card-->
              <!-- Insight #3 -->
           <div class="card">
              <h5 class="card-header bg-info text-white">Underutilized Audience</h5>
               <div class="card-body">
                 <h5 class="card-title">Repeat Coupon Shoppers</h5>
                 <p class="card-text">Audience created in last 90 days has less than 25% connector activation.</p>
-                                    <!-- Card Buttons -->
-                                    <div class="col text-right">
-                                      <div class='btn-group'>
-                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
-                                          <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Update Enhrichments</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Update Audience</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Update Connectors</a>
-                                          </div>
-                                      </div>
-                                        <div class='btn-group'>
-                                          <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
-                                            <div class="dropdown-menu">
-                                              <a class="dropdown-item" href="#">Mute for a Week</a>
-                                              <a class="dropdown-item" href="#">Mute for a Month</a>
-                                              <a class="dropdown-item" href="#">Mute forever</a>
-                                            </div>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                
-     </br>
+                  <!-- Card Buttons -->
+                  <div class="col text-right">
+                    <div class='btn-group'>
+                      <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Update Enhrichments</a>
+                            <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Update Audience</a>
+                            <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Update Connectors</a>
+                        </div> <!--closes dropdown menu-->
+                    </div> <!--closes button group-->
+                    <div class='btn-group'>
+                      <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Mute for a Week</a>
+                          <a class="dropdown-item" href="#">Mute for a Month</a>
+                          <a class="dropdown-item" href="#">Mute forever</a>
+                        </div><!--closes second dropdown menu-->
+                    </div><!--closes second button group-->
+                  </div> <!--closes both button groups-->
+            </div> <!--closes card body-->
+        </div><!--closes the card-->
+    </div><!--closes the card deck-->
+  </div> <!-- closes the row -->
 <!-- Row 2 Data Insights (Second 3) -->
-   <div class="col-md-12">
-     </br>
-   <div class="row">
-   <div class="card-deck">
-     <!-- Insight #4 -->
-        <div class="card">
-          <h5 class="card-header bg-info text-white">Missing Activation</h5>
-             <div class="card-body">
-                <h5 class="card-title">Audience: Croc Lovers</h5>
-                    <p class="card-text">Audience type typically activates with MailChimp connector based on type</p>
-                                        <!-- Card Buttons -->
-                                        <div class="col text-right">
-                                          <div class='btn-group'>
-                                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
-                                              <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Update Enhrichments</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Update Audience</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Update Connectors</a>
-                                              </div>
-                                          </div>
-                                            <div class='btn-group'>
-                                              <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
-                                                <div class="dropdown-menu">
-                                                  <a class="dropdown-item" href="#">Mute for a Week</a>
-                                                  <a class="dropdown-item" href="#">Mute for a Month</a>
-                                                  <a class="dropdown-item" href="#">Mute forever</a>
-                                                </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                    
-     <!-- Insight #5 -->
-        <div class="card">
-          <h5 class="card-header bg-info text-white">Audience Oversaturation</h5>
-            <div class="card-body">
-              <h5 class="card-title">Audience: MVPs</h5>
-              <p class="card-text">Audience is activated in activated by multiple connectors in successive days.</p>
-                                  <!-- Card Buttons -->
-                                  <div class="col text-right">
-                                    <div class='btn-group'>
-                                      <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
-                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">Update Enhrichments</a>
-                                          <div class="dropdown-divider"></div>
-                                          <a class="dropdown-item" href="#">Update Audience</a>
-                                          <div class="dropdown-divider"></div>
-                                          <a class="dropdown-item" href="#">Update Connectors</a>
-                                        </div>
-                                    </div>
-                                      <div class='btn-group'>
-                                        <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
-                                          <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Mute for a Week</a>
-                                            <a class="dropdown-item" href="#">Mute for a Month</a>
-                                            <a class="dropdown-item" href="#">Mute forever</a>
-                                          </div>
-                                      </div>
-                                    </div>
-                              </div>
-                          </div>
-              
-     <!-- Insight #6 -->
-    <div class="card">
-      <h5 class="card-header bg-info text-white">Data Quality <span class="badge badge-warning">Data</span></h5>
-      <div class="card-body">
-        <h5 class="card-title">Audience: Crocs Haters</h5>
-        <p class="card-text">Audience has Attribute with outdated Enrichment Rules </p>
-                         <!-- Card Buttons -->
-                         <div class="col text-right">
-                          <div class='btn-group'>
-                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
-                              <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Update Enhrichments</a>
+</br>   
+  <div class="row">
+    <div class="card-deck">
+      <!-- Insight #4 -->
+          <div class="card">
+            <h5 class="card-header bg-info text-white">Missing Activation</h5>
+              <div class="card-body">
+                  <h5 class="card-title">Audience: Croc Lovers</h5>
+                      <p class="card-text">Audience type typically activates with MailChimp connector based on type</p>
+                      <!-- Card Buttons -->
+                      <div class="col text-right">
+                        <div class='btn-group'>
+                          <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Update Enhrichments</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Update Audience</a>
+                              <a class="dropdown-item" href="#">Update Audience</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Update Connectors</a>
-                              </div>
-                          </div>
-                            <div class='btn-group'>
-                              <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="#">Mute for a Week</a>
-                                  <a class="dropdown-item" href="#">Mute for a Month</a>
-                                  <a class="dropdown-item" href="#">Mute forever</a>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-   </div>   
-   </div>
-   </div>
-        </div> 
-<hr class="my-4">
-
-<div class="row">
-  <div class="col-md-9">
-    <h1>State of the Data <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px"></h1>
-  </div>
-      <div class="col-md-3 text-right">
+                              <a class="dropdown-item" href="#">Update Connectors</a>
+                            </div> <!--closes dropdown menu-->
+                        </div> <!--closes button group-->
+                        <div class='btn-group'>
+                          <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Mute for a Week</a>
+                              <a class="dropdown-item" href="#">Mute for a Month</a>
+                              <a class="dropdown-item" href="#">Mute forever</a>
+                            </div><!--closes second dropdown menu-->
+                        </div><!--closes second button group-->
+                      </div> <!--closes both button groups-->
+                </div> <!--closes card body-->
+            </div><!--closes the card-->
+      <!-- Insight #5 -->
+          <div class="card">
+            <h5 class="card-header bg-info text-white">Audience Oversaturation</h5>
+              <div class="card-body">
+                <h5 class="card-title">Audience: MVPs</h5>
+                <p class="card-text">Audience is activated in activated by multiple connectors in successive days.</p>
+                            <!-- Card Buttons -->
+                            <div class="col text-right">
+                              <div class='btn-group'>
+                                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Update Enhrichments</a>
+                                      <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Update Audience</a>
+                                      <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Update Connectors</a>
+                                  </div> <!--closes dropdown menu-->
+                              </div> <!--closes button group-->
+                              <div class='btn-group'>
+                                <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Mute for a Week</a>
+                                    <a class="dropdown-item" href="#">Mute for a Month</a>
+                                    <a class="dropdown-item" href="#">Mute forever</a>
+                                  </div><!--closes second dropdown menu-->
+                              </div><!--closes second button group-->
+                            </div> <!--closes both button groups-->
+                      </div> <!--closes card body-->
+                  </div><!--closes the card-->
+      <!-- Insight #6 -->
+      <div class="card">
+        <h5 class="card-header bg-info text-white">Data Quality <span class="badge badge-warning">Data</span></h5>
+        <div class="card-body">
+          <h5 class="card-title">Audience: Crocs Haters</h5>
+          <p class="card-text">Audience has Attribute with outdated Enrichment Rules </p>
+                  <!-- Card Buttons -->
+                  <div class="col text-right">
+                    <div class='btn-group'>
+                      <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Take Action</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Update Enhrichments</a>
+                            <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Update Audience</a>
+                            <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Update Connectors</a>
+                        </div> <!--closes dropdown menu-->
+                    </div> <!--closes button group-->
+                    <div class='btn-group'>
+                      <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mute</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Mute for a Week</a>
+                          <a class="dropdown-item" href="#">Mute for a Month</a>
+                          <a class="dropdown-item" href="#">Mute forever</a>
+                        </div><!--closes second dropdown menu-->
+                    </div><!--closes second button group-->
+                  </div> <!--closes both button groups-->
+            </div> <!--closes card body-->
+        </div><!--closes the card-->
+      </div> <!--closes card deck-->
+    </div><!--closes second row-->
+          </div><!--closes the column-->
+        </div>
+      </div>
+      <hr class="my-4">
+  <div class="row">
+    <div class="col-md-9">
+    <h1>State of the Data</h1>
+    <div class="col-md-3">
           <a class="btn btn-outline-info btn-sm" data-toggle="collapse" id="filter-button" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" onclick="confirm_f()">
             Show Filters
           </a>
         </div>
+      </div>
         <div class="collapse" id="collapseExample2">
           <div class='btn-group'>
             <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -363,53 +370,53 @@
           </div>
         </div>
       </br>
-      <div class="card-group">
+    <div class="card-group">
       <div class="card">
-  <img class="card-img-top" src="Resources/Events Created.png" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text" style="text-align:center">Events Processed</p>
-  </div>
-</div>
+        <img class="card-img-top" src="Resources/Events Created.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="text-align:center">Events Processed</p>
+          </div> <!--closes card body-->
+        </div><!--closes card-->
       <div class="card">
- <img class="card-img-top" src="Resources/Enrichments.png" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text" style="text-align:center">Data Enrichments</p>
-  </div>
-</div>
+        <img class="card-img-top" src="Resources/Enrichments.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="text-align:center">Data Enrichments</p>
+          </div> <!--closes card body-->
+        </div><!--closes card-->
       <div class="card">
- <img class="card-img-top" src="Resources/Segments Created.png" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text" style="text-align:center">Segments Created</p>
-  </div>
-</div>
+        <img class="card-img-top" src="Resources/Segments Created.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">Segments Created</p>
+        </div> <!--closes card body-->
+      </div><!--closes card-->
       <div class="card">
- <img class="card-img-top" src="Resources/Audience Activated.png" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text" style="text-align:center">Audiences Created</p>
-  </div>
-</div>
+        <img class="card-img-top" src="Resources/Audience Activated.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">Audiences Created</p>
+        </div> <!--closes card body-->
+      </div><!--closes card-->
       <div class="card">
- <img class="card-img-top" src="Resources/Connectors Activated.png" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text" style="text-align:center">Audiences Activated</p>
-  </div>
-</div>
-  </div>
-</div>
-     </div>
-
+        <img class="card-img-top" src="Resources/Connectors Activated.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text" style="text-align:center">Audiences Activated</p>
+        </div> <!--closes card body-->
+      </div><!--closes card-->
+    </div> <!--closes card group-->
+  </div><!--closes row-->
  <!-- Reporting Section-->
+ <div class="row">
+  <div class="col-md-12">
     <hr class="my-4">
-     <h1>Reports <img src="https://static.thenounproject.com/png/389539-200.png" style="height:25px"></h1>
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+     <h1>Reports</h1>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Custom Reports
-        </button>
-      </h2>
-    </div>
+          </button>
+        </h2>
+    </div><!--closes card header-->
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
 <div class="card-group">
