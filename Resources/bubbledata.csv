@@ -1,0 +1,46 @@
+﻿Cohort,Funnel Stage,Funnel Size,Touchpoints,Funnel Stage Retained,Total Audience Retained
+Crocs Newbies,Awareness,637,2,-,100%
+Crocs Newbies,Engagement,541,2,85%,85%
+Crocs Newbies,Consideration,449,2,83%,70%
+Crocs Newbies,Purchase,368,4,82%,58%
+Crocs Newbies,Retention,291,2,79%,46%
+Crocs Newbies,Expansion,233,1,80%,37%
+Cart Abandoners,Consideration,902,2,-,100%
+Cart Abandoners,Purchase,722,1,80%,80%
+Cart Abandoners,Retention,549,1,76%,61%
+Cart Abandoners,Expansion,417,2,76%,46%
+Crocs Lovers,Purchase,599,1,-,100%
+Crocs Lovers,Retention,461,1,77%,77%
+Crocs Lovers,Expansion,350,3,76%,58%
+MVPs,Awareness,735,2,-,100%
+MVPs,Engagement,573,3,78%,78%
+MVPs,Consideration,453,3,79%,62%
+MVPs,Purchase,353,1,78%,48%
+MVPs,Retention,289,4,82%,39%
+MVPs,Expansion,240,2,83%,33%
+Recent Purchasers,Retention,950,2,-,100%
+Recent Purchasers,Expansion,732,1,77%,77%
+Fashionistas,Awareness,808,2,-,100%
+Fashionistas,Engagement,638,2,79%,79%
+Fashionistas,Consideration,530,3,83%,66%
+Fashionistas,Purchase,424,4,80%,52%
+Fashionistas,Retention,360,2,85%,45%
+Fashionistas,Expansion,288,1,80%,36%
+Crocs Friends & Family,Awareness,991,4,-,100%
+Crocs Friends & Family,Engagement,803,1,81%,81%
+Crocs Friends & Family,Consideration,666,4,83%,67%
+Crocs Friends & Family,Purchase,553,2,83%,56%
+Crocs Friends & Family,Retention,442,3,80%,45%
+Crocs Friends & Family,Expansion,349,1,79%,35%
+Sneakerheads,Awareness,899,3,-,100%
+Sneakerheads,Engagement,728,3,81%,81%
+Sneakerheads,Consideration,604,2,83%,67%
+Sneakerheads,Purchase,501,3,83%,56%
+Sneakerheads,Retention,406,3,81%,45%
+Sneakerheads,Expansion,333,1,82%,37%
+Streetwear Influencers,Awareness,835,2,-,100%
+Streetwear Influencers,Engagement,635,4,76%,76%
+Streetwear Influencers,Consideration,540,4,85%,65%
+Streetwear Influencers,Purchase,437,1,81%,52%
+Streetwear Influencers,Retention,367,4,84%,44%
+Streetwear Influencers,Expansion,283,4,77%,34%

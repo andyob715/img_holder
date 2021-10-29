@@ -6,6 +6,11 @@ body {
     width: 100%;
     height: 500px
   }
+
+  #chartdiv-bubble {
+    width: 100%;
+    height: 600px
+  }
   
   #chartdata {
     max-height: 400px;
@@ -34,4 +39,8 @@ body {
   #suedecrocsfunnel {
     height: 400px;
     width: auto;
+  }
+
+  #light-footer{
+    background-color: white;
   }
