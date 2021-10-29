@@ -273,7 +273,7 @@ series.dataFields.value = "Funnel Size";
 // Setting up some placeholders to use in my tooltip later
 series.dataFields.touchpointvalue = "Touchpoints";
 series.dataFields.funnelretained = "Funnel Stage Retained"
-series.dataFields.totalretained = "Total Audience Retained"
+series.dataFields.totalretained = "Total Audience Retained" 
 series.columns.template.disabled = true;
 series.sequencedInterpolation = true;
 // Breaks inheritance of Tooltip and sets customer color
@@ -281,8 +281,29 @@ series.tooltip.getFillFromObject = false;
 series.tooltip.background.fill = am4core.color("white");
 series.tooltip.label.fill = am4core.color("black");
 
+var tooltipHTML = `<center><h6>{categoryY} : {categoryX}</h6></center>
+<hr />
+<table>
+<tr>
+  <th align="left">Size in Funnel</th>
+  <td>{value}</td>
+</tr>
+<tr>
+  <th align="left">% Retained (Last Stage)</th>
+  <td>{funnelretained}</td>
+</tr>
+<tr>
+  <th align="left">% Retained (Total)</th>
+  <td>{totalretained}</td>
+</tr>
+<tr>
+<th align="left">Average Touchpoints</th>
+<td>{touchpointvalue}</td>
+</tr>
+</table>`;
+
 var bullet = series.bullets.push(new am4core.Circle());
-bullet.tooltipText = "[bold]Audience Size[/]: {Funnel Size}\nAverage Customer Touchpoints: {touchpointvalue}\nRetained from Previous Stage:{funnelretained}\nRetained Since Initial Interaction:{totalretained}";
+bullet.tooltipHTML = tooltipHTML;
 bullet.strokeWidth = 3;
 bullet.stroke = am4core.color("#ffffff");
 bullet.strokeOpacity = 0;
