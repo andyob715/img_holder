@@ -280,6 +280,8 @@ series.sequencedInterpolation = true;
 series.tooltip.getFillFromObject = false;
 series.tooltip.background.fill = am4core.color("white");
 series.tooltip.label.fill = am4core.color("black");
+series.tooltip.interactionsEnabled = true;
+series.tooltip.keepTargetHover = true;
 
 var tooltipHTML = `<center><h6>{categoryY} : {categoryX}</h6></center>
 <hr />
@@ -300,13 +302,16 @@ var tooltipHTML = `<center><h6>{categoryY} : {categoryX}</h6></center>
 <th align="left">Average Touchpoints</th>
 <td>{touchpointvalue}</td>
 </tr>
-</table>`;
+</table>
+<hr />`;
 
 var bullet = series.bullets.push(new am4core.Circle());
 bullet.tooltipHTML = tooltipHTML;
 bullet.strokeWidth = 3;
 bullet.stroke = am4core.color("#ffffff");
 bullet.strokeOpacity = 0;
+
+
 
 bullet.adapter.add("fill", function(fill,target){
   if(target.dataItem){
