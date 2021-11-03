@@ -303,7 +303,17 @@ var tooltipHTML = `<center><h6>{categoryY} : {categoryX}</h6></center>
 <td>{touchpointvalue}</td>
 </tr>
 </table>
-<hr />`;
+<hr />
+<p><strong>Touchpoint Breakdown</strong></p>  
+<button type="button" class="btn btn-sm btn-light btn-outline-dark">
+  Touchpoint #1 <span class="badge badge-success">4</span>
+</button>
+<button type="button" class="btn btn-sm btn-light btn-outline-dark">
+Touchpoint #2 <span class="badge badge-warning">4</span>
+</button>
+<button type="button" class="btn btn-sm btn-light btn-outline-dark">
+Touchpoint #3 <span class="badge badge-danger">4</span>
+</button>`;
 
 var bullet = series.bullets.push(new am4core.Circle());
 bullet.tooltipHTML = tooltipHTML;
